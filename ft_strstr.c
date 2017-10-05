@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/03 21:14:56 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/05 00:24:53 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/05 15:59:08 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,9 @@
 
 char	*ft_strstr(const char *big, const char *little)
 {
-	const char *galaxy;
-	const char *alien;
+	const char	*galaxy;
+	const char	*alien;
+
 	while (*big)
 	{
 		galaxy = big;
@@ -41,11 +42,3 @@ char	*ft_strstr(const char *big, const char *little)
 	}
 	return (NULL);
 }
-
-/*{
-	char s1 [] = "Joey is my favorite alien";
-
-    printf ("Returned String 1: %s\n", ft_strstr(s1, "y"));
-
-	return 0;
-}*/

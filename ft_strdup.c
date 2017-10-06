@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/23 16:54:46 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/09/27 16:35:51 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/06 02:50:19 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,11 @@
 
 char	*ft_strdup(const char *str)
 {
-	unsigned char	*temp;
-	size_t			len;
+	char	*temp;
 
-	len = ft_strlen(str) + 1;
-	temp = malloc(len);
-	return (temp) ? ft_memcpy(temp, str, len) : NULL;
+	if(!(temp = ft_strnew(ft_strlen(str))))
+		return (NULL);
+	return (ft_strcpy(temp, str));
 }
 
 /*int main()

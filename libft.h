@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 21:47:24 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/05 17:32:26 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/06 02:35:20 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ char	ft_strlcat(char *dst, const char *src, size_t s); //*
 char	*ft_strstr(const char *big, const char *little); //*
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int 	ft_strcmp(const char *s1, const char *s2); //*
+char	*ft_strnew(size_t size);
 
 /*Misc.*/
 int		ft_atoi(char *str); //*

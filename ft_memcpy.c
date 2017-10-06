@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 19:21:51 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/02 23:28:01 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/05 20:07:15 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t num)
 	size_t i;
 
 	i = -1;
-	while (i++ != num)
+	while (i++ < n)
 		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
 	return (dst);
 }

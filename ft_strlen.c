@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/23 16:38:05 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/09/28 07:22:35 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/03 17:06:25 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *str)
 	int len;
 
 	len = 0;
-	while (str[len] != '\0')
+	while (str[len])
 		len++;
 	return (len);
 }

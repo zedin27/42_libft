@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/30 15:18:16 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/09/30 18:01:03 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/05 20:08:50 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	i = -1;
 	if (n)
 	{
-		while (++i != n && ((unsigned char *)src)[i] != '\0')
+		while (++i < n && ((unsigned char *)src)[i] != '\0')
 		{
 			((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
 			if (c == ((unsigned char *)src)[i])
@@ -32,8 +32,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	return (dst);
 }
 
-//vvvv REMOVE THE BOTTOM BEFORE SUBMITTING vvvv
-
+/*
 char string1[60] = "Taj Mahal is a historic monument in India.";
 
 int main( void ) {
@@ -46,3 +45,4 @@ int main( void ) {
    printf( "Result: %s\n", buffer );
    printf( "Length: %zd characters\n", ft_strlen( buffer ) );
 }
+*/

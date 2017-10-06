@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/28 05:28:37 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/09/28 18:48:03 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/05 19:33:13 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	return (ft_memset(s, 0, n));
+	ft_memset(s, 0, n);
 }

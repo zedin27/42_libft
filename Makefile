@@ -6,7 +6,7 @@
 #    By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/20 18:13:08 by ztisnes           #+#    #+#              #
-#    Updated: 2017/09/23 16:16:47 by ztisnes          ###   ########.fr        #
+#    Updated: 2017/10/05 19:59:19 by ztisnes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,22 +23,22 @@ AR      = ar rc
 RANLIB  = ranlib
 
 NAME    = libft.a
-HEADER    = libft.h
+
+HEADER  = libft.h
+
 SRCS    = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
-ft_isdigit.c ft_isprint.c ft_itoa.c ft_lstadd.c ft_lstdel.c ft_lstdelone.c \
-ft_lstiter.c ft_lstmap.c ft_lstnew.c ft_memalloc.c ft_memccpy.c ft_memchr.c \
-ft_memcmp.c ft_memcpy.c ft_memdel.c ft_memmove.c ft_memset.c ft_putchar_fd.c \
-ft_putchar.c ft_putendl_fd.c ft_putendl.c ft_putnbr_fd.c ft_putnbr.c \
-ft_putstr_fd.c ft_putstr.c ft_strcat.c ft_strchr.c ft_strclr.c ft_strcmp.c \
-ft_strcpy.c ft_strdel.c ft_strdup.c ft_strequ.c ft_striter.c ft_striteri.c \
-ft_strjoin.c ft_strlcat.c ft_strlen.c ft_strmap.c ft_strmapi.c ft_strncat.c \
-ft_strncmp.c ft_strncpy.c ft_strnequ.c ft_strnew.c ft_strnstr.c ft_strrchr.c \
-ft_strsplit.c ft_strstr.c ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c \
-ft_iswspace.c ft_isspace.c ft_wordlen.c ft_wordcount.c ft_nbrlen.c
+ft_isdigit.c ft_isprint.c ft_memalloc.c ft_memccpy.c ft_memchr.c \
+ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c \
+ft_putstr.c ft_strcat.c ft_strchr.c ft_strcmp.c ft_strcpy.c\
+ft_strlcat.c ft_strlen.c ft_strncat.c ft_strncpy.c ft_strnstr.c \
+ft_strstr.c ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c
 
-OBJS    = $(SRCS:.c=.o)
-
-.PHONY: all, clean, fclean, re
+OBJS    = ft_atoi.o ft_bzero.o ft_isalnum.o ft_isalpha.o ft_isascii.o \
+ft_isdigit.o ft_isprint.o ft_memalloc.o ft_memccpy.o ft_memchr.o \
+ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o \
+ft_putstr.o ft_strcat.o ft_strchr.o ft_strcmp.o ft_strcpy.o\
+ft_strlcat.o ft_strlen.o ft_strncat.o ft_strncpy.o ft_strnstr.o \
+ft_strstr.o ft_strsub.o ft_strtrim.o ft_tolower.o ft_toupper.o
 
 all: $(NAME)
 
@@ -57,3 +57,5 @@ fclean: clean
 		@echo "[INFO] Library [$(NAME)] removed!"
 
 re:		fclean all
+
+.PHONY: all, clean, fclean, re

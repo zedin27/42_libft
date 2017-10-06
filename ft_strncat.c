@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/02 01:09:41 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/02 20:26:09 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/03 16:51:38 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
-	size_t dest_len = ft_strlen(s1);
+	size_t dest_len;
 	size_t i;
 
+	dest_len = ft_strlen(s1);
 	i = 0;
 	while (i < n && s2[i] != '\0')
 	{

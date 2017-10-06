@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 21:47:24 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/05 15:59:26 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/05 17:32:26 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	ft_bzero(void *s, size_t n); //*
 
 /*String manipulation*/
 char	*ft_strcpy(char *dest, const char *src); //*
-char	*ft_strchr(const char *s, int c);
+char	*ft_strchr(const char *s, int c); //*
 char	*ft_strdup(const char *str); //*
 size_t	ft_strlen(const char *str); //*
 char	*ft_strncpy(char *dest, const char *src, size_t num); //*

@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/28 07:48:06 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/09/30 14:47:55 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/06 03:06:11 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 int		ft_isalnum(int c)
 {
-	if (('0' > c && '9' <= c) || ('a' > c && 'z' <= c) ||
-			('A' > c && 'Z' <= c))
+	if (ft_isalpha(c) || ft_isdigit(c))
 		return (1);
 	return (0);
 }

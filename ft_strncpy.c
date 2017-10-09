@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/23 20:01:13 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/02 16:05:13 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/08 21:04:08 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,25 +16,16 @@ char	*ft_strncpy(char *dest, const char *src, size_t num)
 {
 	size_t i;
 
-	i = -1;
-	if (dest == '\0' || src == '\0')
-		return (0);
-	while (++i < num && *src != '\0')
+	i = 0;
+	while (i < num && src[i] != '\0')
+	{
 		dest[i] = src[i];
-	while (++i < num)
+		i++;
+	}
+	while (i < num)
+	{
 		dest[i] = '\0';
+		i++;
+	}
 	return (dest);
 }
-/*int		 main()
-{
-   char src[40];
-   char dest[12];
-
-   ft_memset(dest, '\0', sizeof(dest));
-   ft_strcpy(src, "This is tutorialspoint.com");
-   ft_strncpy(dest, src, 10);
-
-   printf("Final copied string : %s\n", dest);
-
-   return(0);
-}*/

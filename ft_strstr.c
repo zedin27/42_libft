@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/03 21:14:56 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/05 15:59:08 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/06 04:19:34 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ char	*ft_strstr(const char *big, const char *little)
 	const char	*galaxy;
 	const char	*alien;
 
+	if (!*little)
+		return ((char *)big);
 	while (*big)
 	{
 		galaxy = big;

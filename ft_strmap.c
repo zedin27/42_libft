@@ -1,18 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_strmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/28 17:01:59 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/06 03:07:02 by ztisnes          ###   ########.fr       */
+/*   Created: 2017/10/07 21:24:13 by ztisnes           #+#    #+#             */
+/*   Updated: 2017/10/08 19:59:28 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isascii(int c)
+char	*ft_strmap(char const *s, char(*f)(char))
 {
-	return (c >= 0 && c < 128);
+	char *str;
+	int i;
+
+	str = (char *)malloc((sizeof(char)) * (ft_strlen(s) + 1));
+	i = 0;
+	if(!s || !str)
+		return (NULL);
+	if (str)
+	{
+		while (s[i])
+		{
+			str[i] = f(s[i]);
+			i++;
+		}
+		str[i] = '\0';
+	}
+	return (str);
 }

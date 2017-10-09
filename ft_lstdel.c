@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_lstdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/28 17:01:59 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/06 03:07:02 by ztisnes          ###   ########.fr       */
+/*   Created: 2017/10/09 00:48:53 by ztisnes           #+#    #+#             */
+/*   Updated: 2017/10/09 00:50:53 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isascii(int c)
+void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
-	return (c >= 0 && c < 128);
+	t_list *node;
+
+	while(*alst)
+	{
+		node = (*alst)->next;
+		ft_lstdelone(alst, del);
+		*alst = node;
+	}
 }

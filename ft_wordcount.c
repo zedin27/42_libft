@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_wordcount.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/28 17:01:59 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/06 03:07:02 by ztisnes          ###   ########.fr       */
+/*   Created: 2017/10/08 18:08:54 by ztisnes           #+#    #+#             */
+/*   Updated: 2017/10/08 18:34:05 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isascii(int c)
+size_t	ft_wordcount(char const *s, char c)
 {
-	return (c >= 0 && c < 128);
+	int i;
+	int words;
+
+	words = 0;
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == '\0')
+			words++;
+		while (s[i] == c && s[i + 1])
+			i++;
+		i++;
+	}
+	return (words);
 }

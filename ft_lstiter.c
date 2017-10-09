@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/09 00:54:32 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 01:03:53 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:13:28 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {

@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/02 20:25:02 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/08 21:46:59 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 03:13:35 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 ** Return value is the destination length and source length (which appends)
 */
 
-size_t		ft_strlcat (char *dst, const char *src, size_t s)
+size_t	ft_strlcat(char *dst, const char *src, size_t s)
 {
 	size_t	i;
 	size_t	len;

@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 23:28:44 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 00:47:52 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:13:06 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 t_list	*ft_lstnew(void const *content, size_t content_size)
 {

@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 20:30:05 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/08 20:35:04 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:23:03 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 int		ft_strncmp(char const *s1, char const *s2, size_t n)
 {

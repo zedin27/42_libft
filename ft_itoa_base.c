@@ -6,15 +6,19 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 23:39:43 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/08 23:40:22 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:09:35 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** Hello
+*/
+
 static int	len_nbr_base(int value, int base)
 {
-	int		len;
+	int len;
 
 	len = 0;
 	while (value)
@@ -25,7 +29,7 @@ static int	len_nbr_base(int value, int base)
 	return (len);
 }
 
-static char *negative_sign(int n, int base, char *ptr)
+static char	*negative_sign(int n, int base, char *ptr)
 {
 	if (n < 0 && base == 10)
 		ptr[0] = '-';

@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/28 07:51:42 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/06 03:08:47 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:32:47 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 int		ft_isalpha(int c)
 {

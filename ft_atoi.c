@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/20 18:14:21 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/06 03:28:55 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:32:35 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 int		ft_atoi(char *str)
 {
@@ -35,10 +39,4 @@ int		ft_atoi(char *str)
 		i++;
 	}
 	return (number * flag);
-
 }
-
-//int main(int argc, char const *argv[]) {
-//	printf("%d", ft_atoi("1365314565dsfgjsghf2686147"));
-//	return 0;
-//}

@@ -6,7 +6,7 @@
 #    By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/20 18:13:08 by ztisnes           #+#    #+#              #
-#    Updated: 2017/10/09 01:00:05 by ztisnes          ###   ########.fr        #
+#    Updated: 2017/10/09 01:16:31 by ztisnes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,9 +51,6 @@ ft_wordlength.o ft_memdel.o ft_memalloc.o ft_putendl_fd.o ft_putendl.o \
 ft_putstr.o ft_putstr_fd.o ft_putnbr.o ft_putnbr_fd.o ft_strclr.o ft_strdel.o \
 ft_strequ.o ft_strnequ.o ft_itoa.o ft_itoa_base.o ft_lstdelone.o ft_lstnew.o \
 ft_lstdel.o ft_lstadd.o ft_lstiter.o ft_lstmap.o
-
-
-
 
 all: $(NAME)
 

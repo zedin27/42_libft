@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/02 01:09:41 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/03 16:51:38 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 03:14:45 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
@@ -27,17 +31,3 @@ char	*ft_strncat(char *s1, const char *s2, size_t n)
 	s1[dest_len + i] = '\0';
 	return (s1);
 }
-
-/*int main( )
-{
-	char src[50], dest[50];
-
-    ft_strcpy(src,  "This is source");
-    ft_strcpy(dest, "This is destination");
-
-    ft_strncat(dest, src, 15);
-
-    printf("Final destination string : |%s|", dest);
-
-    return(0);
-}*/

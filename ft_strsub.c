@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/07 21:34:37 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/07 21:36:13 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:38:25 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {

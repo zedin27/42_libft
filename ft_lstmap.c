@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/09 00:56:28 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 01:03:52 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:13:07 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {

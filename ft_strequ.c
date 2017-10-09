@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 20:45:42 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/08 20:45:45 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:19:11 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 int		ft_strequ(char const *s1, char const *s2)
 {

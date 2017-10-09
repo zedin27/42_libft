@@ -6,13 +6,17 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 19:10:44 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/08 19:30:41 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:17:59 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void 	ft_putstr_fd(char const *s, int fd)
+/*
+** Hello
+*/
+
+void	ft_putstr_fd(char const *s, int fd)
 {
 	while(*s)
 	{

@@ -6,16 +6,14 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/05 00:55:39 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/06 04:27:53 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:33:43 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-**	PROTECTED VERSION INCLUDES:
-**		if (!little)
-**			return ((char *)big);
+** Hello
 */
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
@@ -24,7 +22,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t j;
 
 	i = 0;
-
 	while (big[i])
 	{
 		j = 0;

@@ -6,16 +6,20 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/07 21:29:06 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/08 20:26:00 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 03:11:10 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char(*f)(unsigned int, char))
+/*
+** Hello
+*/
+
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char *str;
-	int i;
+	char	*str;
+	int		i;
 
 	str = (char *)malloc((sizeof(*s)) * (ft_strlen(s) + 1));
 	i = 0;

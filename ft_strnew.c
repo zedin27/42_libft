@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/06 02:34:49 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/06 02:46:56 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:23:14 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 char	*ft_strnew(size_t size)
 {

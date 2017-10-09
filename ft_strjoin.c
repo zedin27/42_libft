@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/07 21:38:01 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/08 18:08:19 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:22:16 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

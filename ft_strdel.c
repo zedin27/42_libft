@@ -6,15 +6,19 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 19:42:28 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/08 19:43:56 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:51:50 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void 	ft_strdel(char **as)
+/*
+** Hello
+*/
+
+void	ft_strdel(char **as)
 {
-	if(as)
+	if (as)
 	{
 		free(*as);
 		*as = NULL;

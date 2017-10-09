@@ -6,18 +6,22 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 19:44:04 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/08 19:46:38 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:51:31 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void 	ft_strclr(char *s)
+/*
+** Hello
+*/
+
+void	ft_strclr(char *s)
 {
 	int i;
 
 	i = 0;
-	if(s)
+	if (s)
 	{
 		while (s[i])
 			s[i++] = '\0';

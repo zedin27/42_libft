@@ -6,25 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 00:19:16 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/08 18:10:45 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:27:33 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// char	step1(char *stok)
-// {
-// 	int i;
-// 	int flag
-//
-// 	i = 0;
-// 	flag = 0;
-// 	while (*stok != '\0')
-// 	{
-// 		if (flag == 0 && *stok != delim)
-// 	}
-//
-// }
+/*
+** Hello
+*/
 
 char	*ft_strtok(char *str, const char delim)
 {
@@ -48,7 +38,7 @@ char	*ft_strtok(char *str, const char delim)
 		{
 			*stok = '\0';
 			stok++;
-			break;
+			break ;
 		}
 		stok++;
 	}

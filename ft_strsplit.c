@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 00:08:39 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/08 18:35:30 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:24:49 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 char	**ft_strsplit(char const *s, char c)
 {
@@ -22,7 +26,6 @@ char	**ft_strsplit(char const *s, char c)
 	i = 0;
 	k = 0;
 	w = (char **)malloc(sizeof(char *) * (ft_wordcount(s, c) + 1));
-
 	if (!s || !w)
 		return (NULL);
 	while (i < ft_wordcount(s, c))

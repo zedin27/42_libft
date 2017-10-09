@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/23 20:01:13 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/08 21:04:08 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:23:07 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 char	*ft_strncpy(char *dest, const char *src, size_t num)
 {

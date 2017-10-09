@@ -6,17 +6,21 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/23 11:50:49 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/06 03:54:42 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:15:44 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** Hello
+*/
+
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t i;
-	unsigned char *usrc;
-	unsigned char *udest;
+	size_t			i;
+	unsigned char	*usrc;
+	unsigned char	*udest;
 
 	i = 0;
 	usrc = (unsigned char *)src;

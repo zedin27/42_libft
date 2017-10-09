@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 19:20:54 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/08 19:35:24 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:17:48 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 int		ft_putnbr_fd(int n, int fd)
 {

@@ -6,14 +6,16 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/06 04:29:41 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/06 04:55:09 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:18:24 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 /*
 ** UNO Game (First)
 */
+
 char	*ft_strchr(const char *s, int c)
 {
 	size_t i;

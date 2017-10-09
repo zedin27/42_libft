@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 18:08:54 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/08 18:34:05 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:31:39 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 size_t	ft_wordcount(char const *s, char c)
 {

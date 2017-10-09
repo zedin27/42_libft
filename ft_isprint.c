@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/28 17:13:01 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/06 03:19:14 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:32:56 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 int		ft_isprint(int c)
 {

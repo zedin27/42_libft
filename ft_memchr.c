@@ -6,11 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 19:42:15 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/06 04:05:35 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:36:06 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {

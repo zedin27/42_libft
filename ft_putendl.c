@@ -6,12 +6,16 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 19:08:58 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/08 19:10:09 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 02:16:35 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "libft.h"
+
+/*
+** Hello
+*/
 
 void 	ft_putendl(char const *s)
 {

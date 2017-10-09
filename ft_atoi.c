@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/20 18:14:21 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 02:32:35 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 03:44:25 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@
 
 int		ft_atoi(char *str)
 {
-	int i;
-	int flag;
-	long number;
+	int		i;
+	int		flag;
+	long	number;
 
 	i = 0;
 	flag = 1;

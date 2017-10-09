@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 19:23:07 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 02:17:53 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 03:41:50 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** Hello
 */
 
-void 	ft_putnbr(int n)
+void	ft_putnbr(int n)
 {
 	ft_putnbr_fd(n, STDOUT_FILENO);
 }

@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 19:10:44 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 02:17:59 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 03:44:55 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 void	ft_putstr_fd(char const *s, int fd)
 {
-	while(*s)
+	while (*s)
 	{
 		write(fd, s, 1);
 		s++;

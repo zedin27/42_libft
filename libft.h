@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 21:47:24 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 19:09:34 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/10 07:04:22 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,8 @@ char				*ft_strmapi(char const *s, char(*f)(unsigned int, char));
 void				ft_striter(char *s, void(*f)(char *));
 void				ft_striteri(char *s, void(*f)(unsigned int, char *));
 char				*ft_strrchr(const char *s, int c);
-char				*ft_strnstr(const char *big, const char *little, size_t len);
+char				*ft_strnstr(const char *big, const char *little, \
+								size_t len);
 int					ft_strcmp(const char *s1, const char *s2);
 char				*ft_strnew(size_t size);
 char				**ft_strsplit(char const *s, char c);

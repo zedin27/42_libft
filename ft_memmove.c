@@ -3,14 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/23 11:50:49 by ztisnes           #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2017/10/09 19:18:14 by ztisnes          ###   ########.fr       */
-=======
-/*   Updated: 2017/10/09 18:51:30 by ztisnes          ###   ########.fr       */
->>>>>>> 6f299f9c19d7bfc51bea58d499db216bc1823fab
+/*   Created: 2017/10/10 07:02:35 by ztisnes           #+#    #+#             */
+/*   Updated: 2017/10/10 07:02:54 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +18,8 @@
 
 void	*ft_memmove(void *s1, const void *s2, size_t n)
 {
-<<<<<<< HEAD
 	void	*temp_s1;
-=======
 	void    *temp_s1;
->>>>>>> 6f299f9c19d7bfc51bea58d499db216bc1823fab
 
 	temp_s1 = s1;
 	if (!n)

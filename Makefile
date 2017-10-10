@@ -15,7 +15,7 @@ NAME	= libft.a
 
 HEAD	= libft.h
 
-FLAGS	= -Wall -Wextra -Werror
+FLAGS	= -c -Wall -Wextra -Werror
 
 SRCS	= ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 ft_isdigit.c ft_isprint.c ft_iswhitespace.c ft_itoa_base.c ft_itoa.c \
@@ -46,9 +46,9 @@ ft_wordcount.o ft_wordlength.o
 all: $(NAME)
 
 $(NAME):
-	gcc $(FLAGS) -c $(SRCS) -I $(HEADER)
-	ar rc libft.a $(OBJS)
-	ranlib libft.a
+	gcc $(FLAGS) $(SRCS) -I $(HEADER)
+	ar rc $(NAME) $(OBJS)
+	ranlib $(NAME)
 
 clean:
 	rm -rf $(OBJS)
@@ -56,6 +56,6 @@ clean:
 fclean: clean
 	rm -rf $(NAME)
 
-re: fclean all
+re: 	fclean all
 
 .PHONY: all clean fclean re

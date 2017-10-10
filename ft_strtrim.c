@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/07 21:39:35 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 02:47:35 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/10 01:21:05 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,7 @@ char	*step2_copy_string(char const *string, int pos)
 	int		i;
 
 	i = 0;
-	tmp = ft_strnew(ft_strlen(string));
-	if (tmp == NULL)
+	if (!(tmp = ft_strnew(ft_strlen(string))))
 		return (NULL);
 	while (string[pos] != '\0')
 		tmp[i++] = string[pos++];
@@ -60,8 +59,7 @@ char	*step4_remove_extra_nulls(char *str)
 {
 	char *newstring;
 
-	newstring = ft_strdup(str);
-	if (newstring == NULL)
+	if (!(newstring = ft_strdup(str)))
 		return (NULL);
 	free(str);
 	return (newstring);
@@ -72,6 +70,8 @@ char	*ft_strtrim(char const *string)
 	char	*trim;
 	int		i;
 
+	if (!(string))
+		return (NULL);
 	i = step1_get_position(string);
 	trim = step2_copy_string(string, i);
 	if (trim == NULL)

@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 18:15:16 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 02:32:01 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/10 00:07:27 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,10 @@
 
 size_t		ft_wordlength(const char *s, char c)
 {
-	unsigned int	i;
-	size_t			len;
+	size_t i;
 
 	i = 0;
-	len = 0;
-	while (s[i] == c)
+	while (s[i] != c && s[i] != '\0')
 		i++;
-	while (s[i] != c && s[i++])
-		len++;
-	return (len);
+	return (i);
 }

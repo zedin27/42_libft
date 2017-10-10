@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 18:08:54 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 02:31:39 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/10 00:34:00 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,12 @@ size_t	ft_wordcount(char const *s, char c)
 	i = 0;
 	while (s[i])
 	{
-		if (s[i] == '\0')
-			words++;
-		while (s[i] == c && s[i + 1])
+		while (s[i] == c && s[i])
 			i++;
-		i++;
+		if (s[i] && s[i] != c)
+			words++;
+		while (s[i] != c && s[i])
+			i++;
 	}
 	return (words);
 }

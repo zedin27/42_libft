@@ -44,22 +44,17 @@ ft_putstr.o ft_putstr_fd.o ft_putnbr.o ft_putnbr_fd.o ft_strclr.o ft_strdel.o \
 ft_strequ.o ft_strnequ.o ft_itoa.o ft_itoa_base.o ft_lstdelone.o ft_lstnew.o \
 ft_lstdel.o ft_lstadd.o ft_lstiter.o ft_lstmap.o
 
-.PHONY: all, clean, fclean, re
-
 all: $(NAME)
 
 $(NAME):
 		@$(CC) $(CFLAGS) -c $(SRCS)
 		@$(AR) $(NAME) $(OBJS)
 		@$(RANLIB) $(NAME)
-		@echo "[INFO] Library [$(NAME)] created!"
 
 clean:
 		@rm -f $(OBJS)
-		@echo "[INFO] Objects removed!"
 
 fclean: clean
 		@rm -f $(NAME)
-		@echo "[INFO] Library [$(NAME)] removed!"
 
 re:		fclean all

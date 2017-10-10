@@ -64,7 +64,6 @@ char				*ft_strncat(char *s1, const char *s2, size_t n);
 int					ft_strncmp(char const *s1, char const *s2, size_t n);
 size_t				ft_strlcat(char *dst, const char *src, size_t s);
 char				*ft_strstr(const char *big, const char *little);
-char				*ft_strchr(const char *s, int c);
 void				ft_strdel(char **as);
 void				ft_strclr(char *s);
 char				*ft_strmap(char const *s, char (*f)(char));

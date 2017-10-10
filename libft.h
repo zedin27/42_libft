@@ -17,9 +17,6 @@
 # include <stdlib.h>
 # include <string.h>
 
-# define FT_INT_MIN		(-2147483648)
-# define FT_INT_MAX		(2147483647)
-
 /*
 ** List structure
 */
@@ -38,7 +35,7 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 /*
-**Memory Manipulation
+** Memory Manipulation
 */
 void				ft_memdel(void **ap);
 void				*ft_memalloc(size_t size);
@@ -51,7 +48,7 @@ int					ft_memcmp(const void *str1, const void *str2, size_t n);
 void				ft_bzero(void *s, size_t n);
 
 /*
-**String manipulation
+** String manipulation
 */
 char				*ft_strcpy(char *dest, const char *src);
 char				*ft_strchr(const char *s, int c);
@@ -84,7 +81,7 @@ char				*ft_strtrim(char const *string);
 char				*ft_strtok(char *str, const char delim);
 
 /*
-**Misc.
+** Misc.
 */
 int					ft_atoi(char *str);
 char				*ft_itoa_base(int n, int base);

@@ -10,14 +10,6 @@
 #                                                                              #
 # **************************************************************************** #
 
-CC      = gcc
-CFLAGS  = -Wall -Wextra -Werror
-AR      = ar rc
-RANLIB  = ranlib
-
-NAME    = libft.a
-HEAD    = libft.h
-
 SRCS    = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 ft_isdigit.c ft_isprint.c ft_memccpy.c ft_memchr.c ft_striteri.c \
 ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_strrchr.c \
@@ -44,20 +36,25 @@ ft_putstr.o ft_putstr_fd.o ft_putnbr.o ft_putnbr_fd.o ft_strclr.o ft_strdel.o \
 ft_strequ.o ft_strnequ.o ft_itoa.o ft_itoa_base.o ft_lstdelone.o ft_lstnew.o \
 ft_lstdel.o ft_lstadd.o ft_lstiter.o ft_lstmap.o
 
+HEADER = libft.h
+
+NAME = libft.a
+
+FLAGS = -Wall -Wextra -Werror
+
 all: $(NAME)
 
 $(NAME):
-		@$(CC) $(CFLAGS) -c $(SRCS)
-		@$(AR) $(NAME) $(OBJS)
-		@$(RANLIB) $(NAME)
+	gcc $(FLAGS) -c $(SRCS) -I $(HEADER)
+	ar rc libft.a $(OBJS)
+	ranlib libft.a
 
 clean:
-		@rm -f $(OBJS)
+	rm -rf $(OBJS)
 
 fclean: clean
-		@rm -f $(NAME)
+	rm -rf $(NAME)
 
-re:		fclean all
-
+re: fclean all
 
 .PHONY: all, clean, fclean, re

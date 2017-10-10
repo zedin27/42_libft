@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/10 07:02:35 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/10 07:02:54 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/10 07:06:50 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 void	*ft_memmove(void *s1, const void *s2, size_t n)
 {
 	void	*temp_s1;
-	void    *temp_s1;
 
 	temp_s1 = s1;
 	if (!n)

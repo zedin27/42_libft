@@ -53,7 +53,9 @@ $(NAME):
 clean:
 	rm -rf $(OBJS)
 
-flclean: clean
+fclean: clean
 	rm -rf $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re

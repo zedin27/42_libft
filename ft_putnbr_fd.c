@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 19:20:54 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 02:17:48 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 18:13:34 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 
 int		ft_putnbr_fd(int n, int fd)
 {
-	char	c;
-
 	if (n == -2147483648)
 		ft_putstr_fd("-2147483648", fd);
 	if (n < 0)
@@ -29,8 +27,8 @@ int		ft_putnbr_fd(int n, int fd)
 	}
 	if (n < 10)
 	{
-		c = n + '0';
-		ft_putchar_fd(c, fd);
+		n += 48;
+		ft_putchar_fd(n, fd);
 	}
 	else
 	{

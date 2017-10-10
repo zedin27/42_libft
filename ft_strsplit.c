@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 00:08:39 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 02:24:49 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/09 18:24:11 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	**ft_strsplit(char const *s, char c)
 		return (NULL);
 	while (i < ft_wordcount(s, c))
 	{
-		w[i] = (char *)malloc(sizeof(char) * (ft_wordlength(&s[k], c) + 1));
+		w[i] = ft_strnew(ft_wordlength(&s[k], c) + 1);
 		if (!(w[i]))
 			return (NULL);
 		j = 0;

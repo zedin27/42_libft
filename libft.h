@@ -60,7 +60,7 @@ char				*ft_strmapi(char const *s, char(*f)(unsigned int, char));
 void				ft_striter(char *s, void(*f)(char *));
 void				ft_striteri(char *s, void(*f)(unsigned int, char *));
 char				*ft_strrchr(const char *s, int c);
-char				*ft_strnstr(const char *big, const char *little, \								size_t len);
+char				*ft_strnstr(const char *big, const char *little, size_t len);
 int					ft_strcmp(const char *s1, const char *s2);
 char				*ft_strnew(size_t size);
 char				**ft_strsplit(char const *s, char c);

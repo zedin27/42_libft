@@ -13,7 +13,8 @@
 #include "libft.h"
 
 /*
-** Hello
+** Compares string s1 and s2 character by character. If they match, it will
+** continue until the characters differ or terminating null-character is done
 */
 
 int		ft_strequ(char const *s1, char const *s2)

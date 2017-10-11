@@ -13,7 +13,6 @@
 #include "libft.h"
 
 /*
-** ~Possible way to short the code. I need more time for this one.~
 ** strlcat function guarantees to NUL-terminate the destnation string for a 0
 ** The size of the given string is s.
 ** strlcpy != strlcat because one copies and other one concatenates

@@ -13,6 +13,8 @@
 #include "libft.h"
 
 /*
+** Locate character in string. Function returns a pointer to the LAST
+** occurrence.
 ** Poker game (Last)
 */
 

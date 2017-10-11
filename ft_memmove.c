@@ -13,7 +13,9 @@
 #include "libft.h"
 
 /*
-** Hello
+** Safer than memcpy because it does not overwrites memory. It shifts the 
+** current pointer memory to a safer memory block depending the size taken
+** of s1.
 */
 
 void	*ft_memmove(void *s1, const void *s2, size_t n)

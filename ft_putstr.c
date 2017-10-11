@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Outputs the string s to a standar output
 */
 
 void	ft_putstr(char const *s)

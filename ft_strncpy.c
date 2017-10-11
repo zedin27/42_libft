@@ -13,7 +13,10 @@
 #include "libft.h"
 
 /*
-** Hello
+** Function copies the string pointed to by taking n bytes from the src string,
+** including the null byte '\0'. Destination string (dest) must be larger so
+** it does not overlap and able to copy.
+**
 */
 
 char	*ft_strncpy(char *dest, const char *src, size_t num)

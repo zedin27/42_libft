@@ -13,7 +13,9 @@
 #include "libft.h"
 
 /*
-** Hello
+** Looks for a little in a big string where no more than len characters are
+** found after the first occurence of null-terminated. If there is a '\0'
+** in the middle, it will be ignored.
 */
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)

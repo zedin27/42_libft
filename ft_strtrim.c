@@ -13,7 +13,8 @@
 #include "libft.h"
 
 /*
-** Removes tabs, newlines, and whitespaces from the beginning or end of a string
+** Removes tabs, newlines, and whitespaces from beginning and end of a string
+** Created 4 different functions that does each step for readability.
 */
 
 int		step1_get_position(char const *string)

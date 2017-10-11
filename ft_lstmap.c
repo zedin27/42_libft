@@ -16,7 +16,7 @@
 ** Iterates the linked list and applies the function f to create a "new" list
 ** Linked list is a data structure that passes a data and a pointer to the new
 ** node.
-** It returns the new list with malloc. If allocation fails, the function returns
+** It returns the new list with malloc. If allocation fails, the function
 ** NULL.
 */
 

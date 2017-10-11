@@ -13,7 +13,8 @@
 #include "libft.h"
 
 /*
-** Hello
+** Compares two strings if they are equal up to n characters or until '\0'
+** If they are identical, returns 1. Otherwise returns 0.
 */
 
 int		ft_strnequ(char const *s1, char const *s2, size_t n)

@@ -13,7 +13,8 @@
 #include "libft.h"
 
 /*
-** Hello
+** Returns a pointer to a null-terminated byte string, which duplicates the 
+** size of a string pointer by str with dynamic memory and strnew.
 */
 
 char	*ft_strdup(const char *str)

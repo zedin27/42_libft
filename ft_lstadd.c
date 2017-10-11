@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Creates and adds a new list
 */
 
 void	ft_lstadd(t_list **alst, t_list *new)

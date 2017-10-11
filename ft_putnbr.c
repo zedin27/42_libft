@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Outputs an integer (n) to a standard output
 */
 
 void	ft_putnbr(int n)

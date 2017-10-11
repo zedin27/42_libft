@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Join two strings (s1 and s2) into a temporary "fresh" string with malloc.
 */
 
 char	*ft_strjoin(char const *s1, char const *s2)

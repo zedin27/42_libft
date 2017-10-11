@@ -13,7 +13,9 @@
 #include "libft.h"
 
 /*
-** Hello
+** Checks the string in a loop if a character exists.
+** If the character detects a space and continues to read the string, then
+** word increments until loop is over. Return the value of word.
 */
 
 size_t	ft_wordcount(char const *s, char c)

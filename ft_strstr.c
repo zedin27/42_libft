@@ -13,7 +13,6 @@
 #include "libft.h"
 
 /*
-** ~Possible way to short the code. I need more time for this one.~
 ** Locates the FIRST occurance of the NULL-terminated string little
 ** Easy way to think: If there is life in one galaxy, continue searching the
 ** other planets too. If there is no life in the planet, then return the galaxy

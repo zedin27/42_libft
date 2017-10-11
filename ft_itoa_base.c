@@ -13,7 +13,8 @@
 #include "libft.h"
 
 /*
-** Hello
+** Converts integer to ascii. If the base is 10 and value is negative, then
+** the resulting string is preceded with a minus sign '-'
 */
 
 static int		len_nbr_base(int value, int base)

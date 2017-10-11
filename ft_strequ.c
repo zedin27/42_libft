@@ -15,6 +15,9 @@
 /*
 ** Compares string s1 and s2 character by character. If they match, it will
 ** continue until the characters differ or terminating null-character is done
+** <0 means that the first character does not match is lower (ptr1 < ptr2)
+** 0 means content of string are both equal lexicographical.
+** >0 <0 means that the first character does not match is higher (ptr1 > ptr2).
 */
 
 int		ft_strequ(char const *s1, char const *s2)

@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Iterates a single string and increments the length to count each character.
 */
 
 size_t	ft_strlen(const char *str)

@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Look at ft_itoa
 */
 
 char	*ft_itoa(int n)

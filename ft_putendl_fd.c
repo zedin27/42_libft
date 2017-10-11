@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Outputs a string (s) and afterwards a newline '\n' to the file descriptor
 */
 
 void	ft_putendl_fd(char const *s, int fd)

@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Outputs a character c into the file descriptor fd
 */
 
 void	ft_putchar_fd(char c, int fd)

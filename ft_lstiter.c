@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Iteration of a linked list
 */
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))

@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Compares two strings (s1 and s2) with the first n bytes.
 */
 
 int		ft_strncmp(char const *s1, char const *s2, size_t n)

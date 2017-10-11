@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Outputs a character in a standard output
 */
 
 void	ft_putchar(char c)

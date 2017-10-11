@@ -13,7 +13,9 @@
 #include "libft.h"
 
 /*
-** Hello
+** String iteration  that applies function f to each character.
+** Passing the index as the first argumenT. Each character is passed by address
+** to f to be modified if necessary.
 */
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))

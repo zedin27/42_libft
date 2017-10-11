@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Clears a string s by iteration and replacing each character to null '\0'
 */
 
 void	ft_strclr(char *s)

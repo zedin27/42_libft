@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Delets one node from the linked list
 */
 
 void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))

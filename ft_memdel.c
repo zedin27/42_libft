@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Deletes dynamic memory after *ap is called
 */
 
 void	ft_memdel(void **ap)

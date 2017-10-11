@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Paases a pointer to a char and will free from *s from the offset to count.
 */
 
 void	ft_strdel(char **as)

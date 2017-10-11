@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Compares two string memories using ternary statements
 */
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)

@@ -13,7 +13,8 @@
 #include "libft.h"
 
 /*
-** Hello
+** Uses a string and checks the character byte.
+** Return the total amount of characters occupied in a string.
 */
 
 size_t		ft_wordlength(const char *s, char c)

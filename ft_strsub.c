@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Substitute first occurence of pattern with another string
 */
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)

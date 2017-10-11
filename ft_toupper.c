@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** lower case to UPPER case conversion
 */
 
 int		ft_toupper(int c)

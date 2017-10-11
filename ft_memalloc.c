@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Creates malloc by a given size
 */
 
 void	*ft_memalloc(size_t size)

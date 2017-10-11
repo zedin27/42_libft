@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Splits a given string into a seperate string as a "fresh" string
 */
 
 char	**ft_strsplit(char const *s, char c)

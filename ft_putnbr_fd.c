@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Outputs an integer (n) to the file descriptor (fd)
 */
 
 void	ft_putnbr_fd(int n, int fd)

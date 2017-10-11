@@ -13,7 +13,8 @@
 #include "libft.h"
 
 /*
-** Hello
+** Copies the memory size of dst into src by num bytes of times. Returns dst
+** when iteration is completed
 */
 
 void	*ft_memcpy(void *dst, const void *src, size_t num)

@@ -13,7 +13,9 @@
 #include "libft.h"
 
 /*
-** Hello
+** After the function f to each characters of the string given as argument to
+** a fresh "fresh" new string with malloc, resulting from the successive
+** applications of f.
 */
 
 char	*ft_strmap(char const *s, char (*f)(char))

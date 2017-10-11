@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Creates a new list with the given t_list properties
 */
 
 t_list	*ft_lstnew(void const *content, size_t content_size)

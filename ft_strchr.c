@@ -14,6 +14,7 @@
 
 /*
 ** UNO Game (First)
+** Returns a pointer to the first occurrence of the character c in string s
 */
 
 char	*ft_strchr(const char *s, int c)

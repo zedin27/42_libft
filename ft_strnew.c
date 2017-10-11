@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** Creates a new string with a given size.
 */
 
 char	*ft_strnew(size_t size)

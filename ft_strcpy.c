@@ -13,7 +13,8 @@
 #include "libft.h"
 
 /*
-** Hello
+** Copies a string from src to dst by iteration. After null is reached, add a 
+** null byte '\0' by the end and return dst
 */
 
 char	*ft_strcpy(char *dst, const char *src)

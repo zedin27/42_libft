@@ -13,7 +13,9 @@
 #include "libft.h"
 
 /*
-** Hello
+** Sets the size of a memory from in a descending order. Pointer increments to
+** assign its position everytime number decrements. Returns ptr, which will
+** be the filled memory area.
 */
 
 void	*ft_memset(void *ptr, int value, size_t num)

@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Hello
+** String concatenation with n bytes from string s1 (look at ft_strcat)
 */
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)

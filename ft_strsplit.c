@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
+/*   By: lprior <lprior@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/10 07:01:56 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/10 07:02:19 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/11 16:21:30 by lprior           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	**ft_strsplit(char const *s, char c)
 	{
 		if (!(w[i] = (char *)malloc(sizeof(char)
 			* (ft_wordlength(&s[k], c) + 1))))
-		w[i] = ft_strnew(ft_wordlength(&s[k], c) + 1);
+			w[i] = ft_strnew(ft_wordlength(&s[k], c) + 1);
 		if (!(w[i]))
 			return (NULL);
 		j = 0;
@@ -39,8 +39,7 @@ char	**ft_strsplit(char const *s, char c)
 			k++;
 		while (s[k] != c && s[k])
 			w[i][j++] = s[k++];
-		w[i][j] = '\0';
-		i++;
+		w[i++][j] = '\0';
 	}
 	w[i] = NULL;
 	return (w);

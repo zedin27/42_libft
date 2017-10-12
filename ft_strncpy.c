@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
+/*   By: lprior <lprior@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/23 20:01:13 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 02:23:07 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/11 16:04:48 by lprior           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 ** Function copies the string pointed to by taking n bytes from the src string,
 ** including the null byte '\0'. Destination string (dest) must be larger so
 ** it does not overlap and able to copy.
-**
 */
 
 char	*ft_strncpy(char *dest, const char *src, size_t num)

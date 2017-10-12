@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
+/*   By: lprior <lprior@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/10 07:02:35 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/10 07:06:50 by ztisnes          ###   ########.fr       */
+/*   Updated: 2017/10/12 14:45:36 by lprior           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Safer than memcpy because it does not overwrites memory. It shifts the 
+** Safer than memcpy because it does not overwrites memory. It shifts the
 ** current pointer memory to a safer memory block depending the size taken
 ** of s1.
 */

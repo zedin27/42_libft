@@ -6,9 +6,15 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 21:47:24 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/10 07:04:22 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/01/10 23:35:14 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*TODO: Reorganize and make libft better and efficient
+**		Consider in creating obstack header
+**		restructure lists and other ADT
+**		Create unique files for stacks, queues, and binary trees
+*/
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -17,12 +23,27 @@
 # include <stdlib.h>
 # include <string.h>
 
+/*
+** Linked List structure
+*/
+
 typedef struct		s_list
 {
 	void			*content;
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+
+/*
+** Binary tree structure
+*/
+
+typedef struct		s_btree
+{
+	void			*data;
+	struct s_btree	*left;
+	struct s_btree	*right;
+}					t_btree;
 
 t_list				*ft_lstnew(void const *content, size_t content_size);
 void				ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
@@ -89,4 +110,19 @@ int					ft_iswhitespace(char c);
 size_t				ft_wordcount(char const *s, char c);
 size_t				ft_wordlength(const char *s, char c);
 
+t_btree				*create_node(int *value);
+t_btree				*insert_left(t_btree *node, int *value);
+t_btree				*insert_right(t_btree *node, int *value);
+
+t_queue				*init_queue(void);
+void				enqueue(t_queue *queue, void *content);
+void				*dequeue(t_queue *queue);
+void 				*peek_queue(t_queue *queue);
+int					isEmpty(t_queue *queue);
+
+t_stack				*init_stack(void);
+void				push_stack(t_stack *stack, void *content);
+void				*pop_stack(t_stack *stack);
+void				*peek(t_stack *stack);
+int					isEmpty_stack(t_stack *stack);
 #endif

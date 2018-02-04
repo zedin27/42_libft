@@ -6,11 +6,11 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/21 19:33:46 by ztisnes           #+#    #+#             */
-/*   Updated: 2018/02/03 19:29:48 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/02/03 19:35:53 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "grimly.h"
+#include "libft.h"
 
 /*
 ** Heuristic/algorithm usage with struct (position x and position y)

@@ -6,11 +6,11 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/21 19:36:27 by ztisnes           #+#    #+#             */
-/*   Updated: 2018/01/21 22:49:54 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/02/03 19:36:03 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "grimly.h"
+#include "libft.h"
 
 /*
 ** Returns the absolute value taken from the parameter

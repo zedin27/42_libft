@@ -6,13 +6,14 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 00:19:16 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 02:27:33 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/02/12 00:13:02 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
+** FIXME
 ** Sequences of calls to this function split str into contiguous characters.
 ** These are seperated by the delimiters. To determine beginning and end of
 ** a token, the function first scans from the characters without any delim.
@@ -23,25 +24,25 @@
 ** a null pointer.
 */
 
-char	*ft_strtok(char *str, const char delim)
+char	*ft_strtok(char *str, const char *delim)
 {
 	static char		*stok;
 	char			*ptr;
 	int				flag;
 
-	stok = NULL;
 	flag = 0;
+	stok = NULL;
 	ptr = NULL;
 	if (str != NULL)
 		stok = ft_strdup(str);
 	while (*stok != '\0')
 	{
-		if (flag == 0 && *stok != delim)
+		if (flag == 0 && *stok != *delim)
 		{
 			flag = 1;
 			ptr = stok;
 		}
-		else if (flag == 1 && *stok == delim)
+		else if (flag == 1 && *stok == *delim)
 		{
 			*stok = '\0';
 			stok++;

@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/09 19:57:20 by ztisnes           #+#    #+#             */
-/*   Updated: 2018/01/10 23:31:44 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/02/11 23:54:34 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,6 @@
 //TODO: Must be tested properly for all datatypes. Remove main before submitting
 //		Remove "#includes" once fixes are made.
 //FIXME: Polish error and mistakes. Take out unnecessary logic
-
-typedef struct		s_stack
-{
-	struct s_list	*top;
-}					t_stack;
 
 t_stack				*init_stack(void)
 {

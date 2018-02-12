@@ -6,17 +6,11 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/10 01:11:16 by ztisnes           #+#    #+#             */
-/*   Updated: 2018/01/10 23:29:26 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/02/12 00:01:41 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-typedef struct		s_queue
-{
-	t_list			*first;
-	t_list		 	*last;
-}					t_queue;
 
 t_queue				*init_queue(void)
 {
@@ -29,7 +23,7 @@ t_queue				*init_queue(void)
 
 void				enqueue(t_queue *queue, void *content)
 {
-	t_node			*node;
+	t_list			*node;
 
 	node = (t_list *)malloc(sizeof(t_list));
 	node->content = content;

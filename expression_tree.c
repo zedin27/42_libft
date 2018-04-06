@@ -12,11 +12,11 @@
 
 #include "libft.h"
 
-t_btree		*create_node(int *value) //check if is necessary to malloc
+t_btree		*create_node(int *value)
 {
 	t_btree *root;
 
-	root = malloc(sizeof(t_btree));
+	root = (t_btree *)ft_memalloc(sizeof(t_btree));
 	root->data = value;
 	root->left = NULL;
 	root->right = NULL;

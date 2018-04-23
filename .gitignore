@@ -1,3 +1,9 @@
+# Because DS_Store and other annoying files
+._*
+.DS_Store*
+._.DS_Store*
+*.swp
+
 # Prerequisites
 *.d
 .DS_Store*

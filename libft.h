@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 21:47:24 by ztisnes           #+#    #+#             */
-/*   Updated: 2018/02/12 00:09:17 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/04/22 17:52:22 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,11 @@
 
 typedef struct		s_list
 {
+	void			*content;
+	struct s_list	*next;
+	size_t			content_size;
 	int				px;
 	int				py;
-	void			*content;
-	size_t			content_size;
-	struct s_list	*next;
 }					t_list;
 
 /*
@@ -82,6 +82,7 @@ void				*ft_realloc(void *ptr, size_t size);
 char				*ft_strcpy(char *dest, const char *src);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strdup(const char *str);
+int					*ft_strndup(const char *str, size_t n);
 int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 size_t				ft_strlen(const char *str);

@@ -1,24 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strndup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/28 17:19:23 by ztisnes           #+#    #+#             */
-/*   Updated: 2018/03/13 21:08:13 by ztisnes          ###   ########.fr       */
+/*   Created: 2018/03/13 20:57:59 by ztisnes           #+#    #+#             */
+/*   Updated: 2018/03/13 21:07:42 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-** lower case to UPPER case conversion
-*/
-
-int		ft_toupper(int c)
+char	*ft_strndup(const char *str, size_t n)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
+	unsigned int	i;
+	char			*s1;
+
+	i = 0;
+	if (!(s1 = (char *)ft_memalloc((n + 1) * sizeof(char))))
+		return (0);
+	while (n--)
+	{
+		s1[i] = str[i];
+		i++;
+	}
+	return (s1);
 }

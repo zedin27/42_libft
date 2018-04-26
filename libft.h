@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 21:47:24 by ztisnes           #+#    #+#             */
-/*   Updated: 2018/04/22 17:52:22 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/04/25 20:01:34 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,9 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# define UINT64_MAX (18446744073709551615ULL)
+# define INT64_MAX (9223372036854775807LL)
 
 # include <unistd.h>
 # include <stdlib.h>
@@ -47,6 +50,10 @@ typedef struct		s_btree
 	struct s_btree	*right;
 }					t_btree;
 
+/*
+** Stack & Queue
+*/
+
 typedef struct		s_queue
 {
 	t_list			*first;
@@ -58,8 +65,14 @@ typedef struct		s_stack
 	struct s_list	*top;
 }					t_stack;
 
+/*
+** Math related functions
+*/
+
 int					ft_manhattan_heuristic(t_list *a, t_list *b);
 int					ft_abs(int value);
+void 				ft_swap_double(double *num1, double *num2);
+void				ft_swap_ull(uint64_t *num1, uint64_t *num2);
 
 t_list				*ft_lstnew(void const *content, size_t content_size);
 void				ft_lstdelone(t_list **alst, void (*del)(void*, size_t));

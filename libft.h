@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 21:47:24 by ztisnes           #+#    #+#             */
-/*   Updated: 2018/04/25 20:01:34 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/05/14 16:56:28 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@
 
 typedef struct		s_list
 {
-	void			*content;
 	struct s_list	*next;
+	void			*content;
 	size_t			content_size;
 	int				px;
 	int				py;
@@ -159,4 +159,5 @@ void				push_stack(t_stack *stack, void *content);
 void				*pop_stack(t_stack *stack);
 void				*peek(t_stack *stack);
 int					isEmpty_stack(t_stack *stack);
+
 #endif

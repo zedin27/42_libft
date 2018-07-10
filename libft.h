@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 21:47:24 by ztisnes           #+#    #+#             */
-/*   Updated: 2018/05/14 16:56:28 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/07/09 20:51:42 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,12 +74,20 @@ int					ft_abs(int value);
 void 				ft_swap_double(double *num1, double *num2);
 void				ft_swap_ull(uint64_t *num1, uint64_t *num2);
 
+/*
+** Linked List functions
+*/
+
 t_list				*ft_lstnew(void const *content, size_t content_size);
 void				ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+
+/*
+** Memory manipulation functions
+*/
 
 void				ft_memdel(void **ap);
 void				*ft_memalloc(size_t size);
@@ -91,6 +99,10 @@ void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
 int					ft_memcmp(const void *str1, const void *str2, size_t n);
 void				ft_bzero(void *s, size_t n);
 void				*ft_realloc(void *ptr, size_t size);
+
+/*
+** String manipulation functions
+*/
 
 char				*ft_strcpy(char *dest, const char *src);
 char				*ft_strchr(const char *s, int c);
@@ -144,9 +156,17 @@ int					ft_iswhitespace(char c);
 size_t				ft_wordcount(char const *s, char c);
 size_t				ft_wordlength(const char *s, char c);
 
+/*
+** Binary Tree functions
+*/
+
 t_btree				*create_node(int *value);
 t_btree				*insert_left(t_btree *node, int *value);
 t_btree				*insert_right(t_btree *node, int *value);
+
+/*
+** Queue functions
+*/
 
 t_queue				*init_queue(void);
 void				enqueue(t_queue *queue, void *content);
@@ -154,10 +174,20 @@ void				*dequeue(t_queue *queue);
 void 				*peek_queue(t_queue *queue);
 int					isEmpty(t_queue *queue);
 
+/*
+** Stack functions
+*/
+
 t_stack				*init_stack(void);
 void				push_stack(t_stack *stack, void *content);
 void				*pop_stack(t_stack *stack);
 void				*peek(t_stack *stack);
 int					isEmpty_stack(t_stack *stack);
 
+/*
+** Bit manipulation funcions
+*/
+
+unsigned char		ft_reverse_bits(unsigned char octet);
+void				print_bits(unsigned char octet);
 #endif

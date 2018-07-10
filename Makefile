@@ -6,10 +6,9 @@
 #    By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/20 18:13:08 by ztisnes           #+#    #+#              #
-#    Updated: 2018/04/25 20:01:32 by ztisnes          ###   ########.fr        #
+#    Updated: 2018/07/09 20:51:19 by ztisnes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
 
 NAME	= libft.a
 
@@ -30,6 +29,7 @@ ft_strnequ.c ft_strnew.c ft_strnstr.c ft_strrchr.c ft_strsplit.c ft_strstr.c \
 ft_strsub.c ft_strtok.c ft_strtrim.c ft_tolower.c ft_toupper.c \
 ft_wordcount.c ft_wordlength.c expression_tree.c queue.c stack.c \
 ft_abs.c ft_realloc.c ft_manhattan_heuristic.c ft_swap_double.c ft_swap_ull.c \
+ft_reverse_bits.c ft_print_bits.c
 
 OBJS    = $(SRCS:.c=.o)
 

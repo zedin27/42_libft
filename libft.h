@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 21:47:24 by ztisnes           #+#    #+#             */
-/*   Updated: 2018/07/09 20:51:42 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/07/12 15:52:36 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,9 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# define UINT64_MAX (18446744073709551615ULL)
-# define INT64_MAX (9223372036854775807LL)
+# define UINT64_MAX		(18446744073709551615ULL)
+# define INT64_MAX		(9223372036854775807LL)
+# define UNUSED(var)	(void)(var)
 
 # include <unistd.h>
 # include <stdlib.h>

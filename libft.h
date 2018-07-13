@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 21:47:24 by ztisnes           #+#    #+#             */
-/*   Updated: 2018/07/12 15:52:36 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/07/12 21:55:30 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,9 @@ int					ft_manhattan_heuristic(t_list *a, t_list *b);
 int					ft_abs(int value);
 void 				ft_swap_double(double *num1, double *num2);
 void				ft_swap_ull(uint64_t *num1, uint64_t *num2);
+double				ft_sine(int num);
+double				ft_factorial(int num);
+int					ft_pow(int base, int power);
 
 /*
 ** Linked List functions

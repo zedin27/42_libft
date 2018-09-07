@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/28 05:28:37 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 02:32:41 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/09/06 18:58:05 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Hello
+** Sets memory source to zero
 */
 
 void	ft_bzero(void *s, size_t n)

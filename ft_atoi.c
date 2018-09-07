@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/20 18:14:21 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 03:44:25 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/09/06 18:57:26 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Hello
+** ASCII -> integer
 */
 
 int		ft_atoi(char *str)

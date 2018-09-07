@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iswhitespace.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 01:47:30 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 02:09:58 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/09/06 18:59:49 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Hello
+** Checks possible whitespaces
 */
 
 int		ft_iswhitespace(char c)
 {
-	return (c == '\t' || c == '\n' || c == ' ');
+	return (c == '\t' || c == '\n' || c == ' ' || c == '\v' || c == '\f');
 }

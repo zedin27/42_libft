@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/28 17:01:59 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 02:32:50 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/09/06 18:58:48 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Hello
+** Checks if the character is withing the ASCII table
 */
 
 int		ft_isascii(int c)

@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/28 07:51:42 by ztisnes           #+#    #+#             */
-/*   Updated: 2017/10/09 02:32:47 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/09/06 18:58:28 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Hello
+** Checks if is part of the ASCII alphabet
 */
 
 int		ft_isalpha(int c)

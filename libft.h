@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 21:47:24 by ztisnes           #+#    #+#             */
-/*   Updated: 2018/07/12 21:55:30 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/09/06 18:57:12 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,9 @@ void				ft_swap_ull(uint64_t *num1, uint64_t *num2);
 double				ft_sine(int num);
 double				ft_factorial(int num);
 int					ft_pow(int base, int power);
+unsigned int		ft_lcm(unsigned int a, unsigned int b);
+int					ft_gcd(int num, int den);
+
 
 /*
 ** Linked List functions

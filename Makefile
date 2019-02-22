@@ -6,7 +6,7 @@
 #    By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/20 18:13:08 by ztisnes           #+#    #+#              #
-#    Updated: 2018/09/06 19:04:16 by ztisnes          ###   ########.fr        #
+#    Updated: 2019/02/21 16:22:14 by ztisnes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,9 +27,10 @@ ft_strdup.c ft_strequ.c ft_striter.c ft_striteri.c ft_strjoin.c ft_strlcat.c \
 ft_strlen.c ft_strmap.c ft_strmapi.c ft_strncat.c ft_strncmp.c ft_strncpy.c \
 ft_strnequ.c ft_strnew.c ft_strnstr.c ft_strrchr.c ft_strsplit.c ft_strstr.c \
 ft_strsub.c ft_strtok.c ft_strtrim.c ft_tolower.c ft_toupper.c \
-ft_wordcount.c ft_wordlength.c expression_tree.c queue.c stack.c \
+ft_wordcount.c ft_wordlength.c expression_tree.c ft_queue.c ft_stack.c \
 ft_abs.c ft_realloc.c ft_manhattan_heuristic.c ft_swap_double.c ft_swap_ull.c \
-ft_reverse_bits.c ft_print_bits.c ft_pow.c ft_gcd.c ft_lcm.c
+ft_reverse_bits.c ft_print_bits.c ft_pow.c ft_gcd.c ft_lcm.c ft_print_queue.c \
+main.c
 
 OBJS    = $(SRCS:.c=.o)
 

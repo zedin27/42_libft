@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/10 01:11:16 by ztisnes           #+#    #+#             */
-/*   Updated: 2019/02/21 16:21:58 by ztisnes          ###   ########.fr       */
+/*   Updated: 2019/02/22 13:01:17 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,12 +45,14 @@ void				*dequeue(t_queue *queue)
 	t_list			*tmp;
 
 	tmp = queue->first;
-	if (tmp)
+	if (!tmp)
+		return (NULL);
+	else
 	{
 		queue->first = tmp->next;
 		return (tmp->content);
 	}
-	return (NULL);
+
 }
 
 void 				*peek_queue(t_queue *queue)

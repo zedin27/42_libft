@@ -6,18 +6,28 @@
 /*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/21 16:19:31 by ztisnes           #+#    #+#             */
-/*   Updated: 2019/02/21 16:22:55 by ztisnes          ###   ########.fr       */
+/*   Updated: 2019/02/24 20:56:30 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-void				print_queue(t_queue *queue)
+void				ft_print_queue(t_queue *queue)
 {
-	while (!is_empty(queue))
+	// ft_putstr((char*)queue->first->content);
+	if (is_empty(queue))
+		ft_putstr("Empty queue\n");
+	else
 	{
-		ft_putstr((char*)queue->first->content);
-		ft_putstr(" ");
-		dequeue(queue);
+		printf("\nQueue contains: \n");
+		while (!is_empty(queue))
+		{
+			// ft_putstr(*(int *)queue->first->content);
+			// ik-todo: check dereference
+			int print = *(int *)queue->first->content;
+			printf("%d \n", print);
+			dequeue(queue);
+		}
 	}
 }

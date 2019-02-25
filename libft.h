@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 21:47:24 by ztisnes           #+#    #+#             */
-/*   Updated: 2019/02/21 16:22:04 by ztisnes          ###   ########.fr       */
+/*   Updated: 2019/02/24 20:53:59 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -167,7 +167,7 @@ size_t				ft_wordlength(const char *s, char c);
 ** Binary Tree functions
 */
 
-t_btree				*create_node(int *value);
+// t_btree				*create_node(int *value);
 t_btree				*insert_left(t_btree *node, int *value);
 t_btree				*insert_right(t_btree *node, int *value);
 
@@ -180,7 +180,7 @@ void				enqueue(t_queue *queue, void *content);
 void				*dequeue(t_queue *queue);
 void 				*peek_queue(t_queue *queue);
 int					is_empty(t_queue *queue);
-void				print_queue(t_queue *queue);
+void				ft_print_queue(t_queue *queue);
 
 /*
 ** Stack functions

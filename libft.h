@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 21:47:24 by ztisnes           #+#    #+#             */
-/*   Updated: 2019/02/24 20:53:59 by ztisnes          ###   ########.fr       */
+/*   Updated: 2019/02/25 15:39:24 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -177,7 +177,7 @@ t_btree				*insert_right(t_btree *node, int *value);
 
 t_queue				*init_queue(void);
 void				enqueue(t_queue *queue, void *content);
-void				*dequeue(t_queue *queue);
+int 				dequeue(t_queue *queue);
 void 				*peek_queue(t_queue *queue);
 int					is_empty(t_queue *queue);
 void				ft_print_queue(t_queue *queue);

@@ -6,7 +6,7 @@
 /*   By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 20:45:42 by ztisnes           #+#    #+#             */
-/*   Updated: 2018/09/06 19:02:11 by ztisnes          ###   ########.fr       */
+/*   Updated: 2019/10/22 03:20:46 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 ** continue until the characters differ or terminating null-character is done
 ** <0 means that the first character does not match is lower (ptr1 < ptr2)
 ** 0 means content of string are both equal lexicographical.
-** >0 <0 means that the first character does not match is higher (ptr1 > ptr2).
+** >0 means that the first character does not match is higher (ptr1 > ptr2).
 */
 
 int		ft_strequ(char const *s1, char const *s2)

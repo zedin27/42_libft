@@ -6,7 +6,7 @@
 #    By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/20 18:13:08 by ztisnes           #+#    #+#              #
-#    Updated: 2019/10/13 01:20:00 by ztisnes          ###   ########.fr        #
+#    Updated: 2019/11/16 17:53:58 by ztisnes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,8 @@ ft_strnequ.c ft_strnew.c ft_strnstr.c ft_strrchr.c ft_strsplit.c ft_strstr.c \
 ft_strsub.c ft_strtok.c ft_strtrim.c ft_tolower.c ft_toupper.c \
 ft_wordcount.c ft_wordlength.c expression_tree.c ft_queue.c ft_stack.c \
 ft_abs.c ft_realloc.c ft_manhattan_heuristic.c ft_swap_double.c ft_swap_ull.c \
-ft_reverse_bits.c ft_print_bits.c ft_pow.c ft_gcd.c ft_lcm.c ft_print_queue.c
+ft_reverse_bits.c ft_print_bits.c ft_pow.c ft_gcd.c ft_lcm.c ft_print_queue.c \
+ft_printhex.c 
 # main.c
 
 OBJS    = $(SRCS:.c=.o)
